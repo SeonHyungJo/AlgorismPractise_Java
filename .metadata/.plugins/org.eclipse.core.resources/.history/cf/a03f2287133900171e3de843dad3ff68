@@ -14,8 +14,8 @@ public class ReverseStr {
 		String[] array = str.split("");
 		Arrays.sort(array);
 		
-		char strZ = Z;
-		int intStr = (int)(strZ);
+		String strZ = "Z";
+		int intStr = Integer.parseInt(strZ);
 		System.out.println(intStr);
 		System.out.println(Arrays.toString(array));
 //		for (int i = 0; i < array.length; i++) {
