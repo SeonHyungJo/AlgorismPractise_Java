@@ -10,11 +10,9 @@ class StringExercise{
     String getMiddle(String word){
     	String[] array = word.split("");
     	if (word.length()%2 == 0) {
-			return array[(word.length()/2)-1] + array[(word.length()/2)];
-		}else{
-			return array[(word.length()/2)];
+			return array[(word.length()/2)-1] + array[(word.length()/2)-1];
 		}
-    	    
+    	return "";    
     }
     // 아래는 테스트로 출력해 보기 위한 코드입니다.
     public static void  main(String[] args){
