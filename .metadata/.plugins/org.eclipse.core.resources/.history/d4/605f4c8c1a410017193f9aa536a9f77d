@@ -12,17 +12,17 @@ class TryHelloWorld {
         int[] answer = new int[2];
         int min;
         if (a>b) {
-			min = b;
-		}else{
 			min = a;
-		}  
+		}else{
+			min = b;
+		}
+       
         for (int i = 1; i < min; i++) {
 			if (a%i==0 && b%i==0) {
-				answer[0] = i;
-				answer[1] = a*b/i;
+				answer[1] = min;
 			}
 		}
-        
+        answer[0] = a*b/min;
         return answer;
     }
 

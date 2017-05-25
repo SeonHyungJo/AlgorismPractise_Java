@@ -12,23 +12,23 @@ class TryHelloWorld {
         int[] answer = new int[2];
         int min;
         if (a>b) {
-			min = b;
-		}else{
 			min = a;
-		}  
+		}else{
+			min = b;
+		}
+       
         for (int i = 1; i < min; i++) {
 			if (a%i==0 && b%i==0) {
-				answer[0] = i;
-				answer[1] = a*b/i;
+				answer[0] = min;
 			}
 		}
-        
+        answer[1] = a*b/min;
         return answer;
     }
 
     // 아래는 테스트로 출력해 보기 위한 코드입니다.
     public static void main(String[] args) {
         TryHelloWorld c = new TryHelloWorld();
-        System.out.println(Arrays.toString(c.gcdlcm(2, 3)));
+        System.out.println(Arrays.toString(c.gcdlcm(3, 12)));
     }
 }
