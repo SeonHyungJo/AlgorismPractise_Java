@@ -1,0 +1,22 @@
+package nextBigNumber;
+
+class nextBigNumber
+{
+    public int nextBigNumber(int n)
+    {
+        int answer = 0;
+        String num = Integer.toBinaryString(n);
+        while(true){
+        	if (num.count()) {
+				
+			}
+        }
+        return answer;
+    }
+    public static void main(String[] args)
+    {
+    	nextBigNumber test = new nextBigNumber();
+        int n = 78;
+        System.out.println(test.nextBigNumber(n));
+    }
+}
