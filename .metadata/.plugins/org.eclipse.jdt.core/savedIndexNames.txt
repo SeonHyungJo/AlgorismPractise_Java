@@ -2,9 +2,10 @@ INDEX VERSION 1.127+C:\Users\senji\Desktop\바탕화면\AlgorismPractise_Java\.m
 1284357000.index
 186659899.index
 1951317179.index
-3031760185.index
 1926046062.index
+3031760185.index
 649782115.index
 3232010760.index
+3937644438.index
 1473037429.index
 2549204177.index
