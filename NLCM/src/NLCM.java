@@ -1,3 +1,6 @@
+import java.awt.List;
+import java.util.Arrays;
+
 
 /*
  * 두 수의 최소공배수(Least Common Multiple)란 입력된 두 수의 배수 중 공통이 되는 가장 작은 숫자를 의미합니다. 
@@ -8,14 +11,36 @@
  */
 class NLCM {
 	public long nlcm(int[] num) {
-		long answer = 0;
+		int val1 = num[0],val2;
+		int r = 1;
+		int LCM = 0, tmp1, tmp2;
 
-		return answer;
+		for (int i = 1; i < num.length; i++) {
+			r = 1;
+			val2 = num[i];
+			tmp1 = val1;
+			tmp2 = val2;
+			System.out.println("val1 : " + val1 + " val2 : " + val2);
+			System.out.println("tmp1 : " + tmp1 + " tmp2 : " + tmp2);
+			if(val1<val2){//2번째 입력수가 클 경우 큰수를 val1으로 변경
+	            val1 = tmp2;
+	            val2 = tmp1;
+	         }
+			while(r>0){//유클리드 호제법을 이용한 GCD(최대공약수)구하기
+				r = val1 % val2;
+				val1 = val2;
+				val2 = r;
+			}
+			LCM = tmp1 * tmp2 / val1;
+			System.out.println("LCM : " + LCM);
+			val1 = LCM;
+		}
+		return LCM;
 	}
 
 	public static void main(String[] args) {
 		NLCM c = new NLCM();
-		int[] ex = { 2, 6, 8, 14 };
+		int[] ex = { 6, 97, 70, 42, 77, 54, 96, 71, 39, 50 };
 		// 아래는 테스트로 출력해 보기 위한 코드입니다.
 		System.out.println(c.nlcm(ex));
 	}
