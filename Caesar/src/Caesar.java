@@ -1,4 +1,4 @@
-import java.awt.List;
+
 import java.lang.reflect.Array;
 
 /*
@@ -17,16 +17,18 @@ class Caesar {
 		String result = "";
 		for (int i = 0; i < array.length; i++) {
 			int c = (int)array[i].charAt(0);
-			if (c>=97) {
-				c += n;
-				if (c > 122) {
-					c -= 26;
+			if (c <= 90) {
+				if (c == 32) {
+					c = 32;
+				}else{
+					c += n;
+					if (c > 90 ) {
+						c = 65 + (c-65)%26;
+					}
 				}
-			} else {
+			} else{
 				c += n;
-				if (c > 90) {
-					c -= 26;
-				}
+				c = 97 + (c-97)%26;
 			}
 			result += Character.toString((char)c);
 		}
@@ -35,6 +37,6 @@ class Caesar {
 
 	public static void main(String[] args) {
 		Caesar c = new Caesar();
-		System.out.println("s는 'a A Z z', n은 4인 경우: " + c.caesar("a B z Z", 4));
+		System.out.println("s는 'a A Z z', n은 4인 경우: " + c.caesar("q oaYextLMerNvekoIsHWjv ONqNiEQEz qTTmJ kodqn GYGI", 38));
 	}
 }
