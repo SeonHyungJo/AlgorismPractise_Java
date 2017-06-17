@@ -5763,3 +5763,143 @@ This warning can be switched off on the Team > Git > Confirmations and Warnings 
 
 !ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2017-06-14 13:35:31.689
 !MESSAGE properties loading for project 'Caesar'
+
+!ENTRY org.eclipse.egit.ui 4 2 2017-06-14 13:36:08.628
+!MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.egit.ui".
+!STACK 0
+org.eclipse.swt.SWTException: Device is disposed
+	at org.eclipse.swt.SWT.error(SWT.java:4441)
+	at org.eclipse.swt.SWT.error(SWT.java:4356)
+	at org.eclipse.swt.SWT.error(SWT.java:4327)
+	at org.eclipse.swt.widgets.Display.error(Display.java:1258)
+	at org.eclipse.swt.widgets.Display.asyncExec(Display.java:709)
+	at org.eclipse.egit.ui.internal.push.PushResultDialog.show(PushResultDialog.java:53)
+	at org.eclipse.egit.ui.internal.push.PushOperationUI$2.done(PushOperationUI.java:252)
+	at org.eclipse.core.internal.jobs.JobListeners$3.notify(JobListeners.java:42)
+	at org.eclipse.core.internal.jobs.JobListeners.doNotify(JobListeners.java:113)
+	at org.eclipse.core.internal.jobs.JobListeners.done(JobListeners.java:151)
+	at org.eclipse.core.internal.jobs.JobManager.endJob(JobManager.java:655)
+	at org.eclipse.core.internal.jobs.WorkerPool.endJob(WorkerPool.java:105)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:71)
+!SESSION 2017-06-17 11:49:34.600 -----------------------------------------------
+eclipse.buildId=4.4.2.M20150204-1700
+java.version=1.8.0_111
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=ko_KR
+Framework arguments:  -product org.eclipse.epp.package.jee.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.jee.product
+
+!ENTRY org.eclipse.egit.ui 2 0 2017-06-17 11:50:13.740
+!MESSAGE Warning: EGit couldn't detect the installation path "gitPrefix" of native Git. Hence EGit can't respect system level
+Git settings which might be configured in ${gitPrefix}/etc/gitconfig under the native Git installation directory.
+The most important of these settings is core.autocrlf. Git for Windows by default sets this parameter to true in
+this system level configuration. The Git installation location can be configured on the
+Team > Git > Configuration preference page's 'System Settings' tab.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.eclipse.egit.ui 2 0 2017-06-17 11:50:13.744
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\senji'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2017-06-17 11:50:18.871
+!MESSAGE properties loading for project 'Caesar'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2017-06-17 11:50:18.880
+!MESSAGE properties loading for project 'Collatz'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2017-06-17 11:50:18.881
+!MESSAGE properties loading for project 'HarshadNumber'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2017-06-17 11:50:18.882
+!MESSAGE properties loading for project 'JumpCase'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2017-06-17 11:50:18.882
+!MESSAGE properties loading for project 'NLCM'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2017-06-17 11:50:18.883
+!MESSAGE properties loading for project 'NoOvertime'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2017-06-17 11:50:18.885
+!MESSAGE properties loading for project 'NumOfPrime'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2017-06-17 11:50:18.886
+!MESSAGE properties loading for project 'ProductMatrix'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2017-06-17 11:50:18.886
+!MESSAGE properties loading for project 'RemoteSystemsTempFiles'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2017-06-17 11:50:18.888
+!MESSAGE properties loading for project 'ReverseInt'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2017-06-17 11:50:18.889
+!MESSAGE properties loading for project 'getDayName'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2017-06-17 11:50:18.890
+!MESSAGE properties loading for project 'getMinSum'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2017-06-17 11:50:18.890
+!MESSAGE properties loading for project 'nextBigNumber'
+!SESSION 2017-06-17 15:51:05.169 -----------------------------------------------
+eclipse.buildId=4.4.2.M20150204-1700
+java.version=1.8.0_111
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=ko_KR
+Framework arguments:  -product org.eclipse.epp.package.jee.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.jee.product
+
+!ENTRY org.eclipse.egit.ui 2 0 2017-06-17 15:51:26.709
+!MESSAGE Warning: EGit couldn't detect the installation path "gitPrefix" of native Git. Hence EGit can't respect system level
+Git settings which might be configured in ${gitPrefix}/etc/gitconfig under the native Git installation directory.
+The most important of these settings is core.autocrlf. Git for Windows by default sets this parameter to true in
+this system level configuration. The Git installation location can be configured on the
+Team > Git > Configuration preference page's 'System Settings' tab.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.eclipse.egit.ui 2 0 2017-06-17 15:51:26.711
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\senji'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2017-06-17 15:51:30.897
+!MESSAGE properties loading for project 'Caesar'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2017-06-17 15:51:30.910
+!MESSAGE properties loading for project 'Collatz'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2017-06-17 15:51:30.911
+!MESSAGE properties loading for project 'HarshadNumber'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2017-06-17 15:51:30.912
+!MESSAGE properties loading for project 'JumpCase'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2017-06-17 15:51:30.913
+!MESSAGE properties loading for project 'NLCM'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2017-06-17 15:51:30.914
+!MESSAGE properties loading for project 'NoOvertime'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2017-06-17 15:51:30.916
+!MESSAGE properties loading for project 'NumOfPrime'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2017-06-17 15:51:30.917
+!MESSAGE properties loading for project 'ProductMatrix'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2017-06-17 15:51:30.918
+!MESSAGE properties loading for project 'RemoteSystemsTempFiles'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2017-06-17 15:51:30.919
+!MESSAGE properties loading for project 'ReverseInt'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2017-06-17 15:51:30.920
+!MESSAGE properties loading for project 'getDayName'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2017-06-17 15:51:30.921
+!MESSAGE properties loading for project 'getMinSum'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2017-06-17 15:51:30.923
+!MESSAGE properties loading for project 'nextBigNumber'
